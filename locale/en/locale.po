@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OJS SMTP Manager\n"
+"POT-Creation-Date: 2026-10-31 00:00:00+0000\n"
+"PO-Revision-Date: 2026-10-31 00:00:00+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+msgid "plugins.generic.smtpManager.displayName"
+msgstr "SMTP Manager"
+
+msgid "plugins.generic.smtpManager.description"
+msgstr "Configure custom SMTP settings per-journal or site-wide with real-time test mail diagnostics without modifying config.inc.php."
+
+msgid "plugins.generic.smtpManager.settings.title"
+msgstr "SMTP Settings & Diagnostics"
+
+msgid "plugins.generic.smtpManager.tabs.settings"
+msgstr "SMTP Configuration"
+
+msgid "plugins.generic.smtpManager.tabs.testing"
+msgstr "Test & Diagnostics"
+
+msgid "plugins.generic.smtpManager.tabs.logs"
+msgstr "Delivery Logs"
+
+msgid "plugins.generic.smtpManager.settings.enabled"
+msgstr "Enable Custom SMTP for this Journal"
+
+msgid "plugins.generic.smtpManager.settings.enabled.description"
+msgstr "Override the system config.inc.php mail configuration and use this journal's dedicated SMTP credentials."
+
+msgid "plugins.generic.smtpManager.settings.smtpHost"
+msgstr "SMTP Host"
+
+msgid "plugins.generic.smtpManager.settings.smtpHost.description"
+msgstr "e.g. smtp.gmail.com, mail.yourdomain.com"
+
+msgid "plugins.generic.smtpManager.settings.smtpPort"
+msgstr "SMTP Port"
+
+msgid "plugins.generic.smtpManager.settings.smtpPort.description"
+msgstr "Common ports: 465 (SSL), 587 (TLS), 25 (None)"
+
+msgid "plugins.generic.smtpManager.settings.smtpAuth"
+msgstr "Encryption / Authentication"
+
+msgid "plugins.generic.smtpManager.settings.smtpAuth.none"
+msgstr "None (Insecure / Port 25)"
+
+msgid "plugins.generic.smtpManager.settings.smtpAuth.ssl"
+msgstr "SSL (Port 465)"
+
+msgid "plugins.generic.smtpManager.settings.smtpAuth.tls"
+msgstr "TLS / STARTTLS (Port 587)"
+
+msgid "plugins.generic.smtpManager.settings.smtpUsername"
+msgstr "SMTP Username"
+
+msgid "plugins.generic.smtpManager.settings.smtpUsername.description"
+msgstr "Full email address or username for SMTP server authentication."
+
+msgid "plugins.generic.smtpManager.settings.smtpPassword"
+msgstr "SMTP Password"
+
+msgid "plugins.generic.smtpManager.settings.smtpPassword.description"
+msgstr "Password or application-specific password."
+
+msgid "plugins.generic.smtpManager.settings.fromEmail"
+msgstr "Sender (From) Email"
+
+msgid "plugins.generic.smtpManager.settings.fromEmail.description"
+msgstr "Must match or be authorized by your SMTP server to avoid rejection."
+
+msgid "plugins.generic.smtpManager.settings.fromName"
+msgstr "Sender (From) Name"
+
+msgid "plugins.generic.smtpManager.settings.fromName.description"
+msgstr "Display name for outgoing emails (e.g., Journal Editorial Office)."
+
+msgid "plugins.generic.smtpManager.settings.suppressCertCheck"
+msgstr "Disable SSL Certificate Verification"
+
+msgid "plugins.generic.smtpManager.settings.suppressCertCheck.description"
+msgstr "Only enable if using self-signed certificates or encountering local SSL verification failures."
+
+msgid "plugins.generic.smtpManager.test.heading"
+msgstr "Test Email Delivery"
+
+msgid "plugins.generic.smtpManager.test.description"
+msgstr "Send a live diagnostic test email to verify your SMTP connection and authentication."
+
+msgid "plugins.generic.smtpManager.test.recipient"
+msgstr "Recipient Email Address"
+
+msgid "plugins.generic.smtpManager.test.recipient.description"
+msgstr "Enter an active email address to receive the test message."
+
+msgid "plugins.generic.smtpManager.test.button"
+msgstr "Send Test Email"
+
+msgid "plugins.generic.smtpManager.test.success"
+msgstr "Test email successfully sent to {$recipient}!"
+
+msgid "plugins.generic.smtpManager.test.failed"
+msgstr "Failed to send test email. Reason: {$error}"
+
+msgid "plugins.generic.smtpManager.test.savedRequired"
+msgstr "Please save settings before running a live test."
+
+msgid "plugins.generic.smtpManager.logs.heading"
+msgstr "Email Delivery Logs"
+
+msgid "plugins.generic.smtpManager.logs.description"
+msgstr "Recent outgoing emails sent by OJS (submission notifications, review alerts, editorial correspondence) and test emails."
+
+msgid "plugins.generic.smtpManager.logs.refresh"
+msgstr "Refresh"
+
+msgid "plugins.generic.smtpManager.logs.clear"
+msgstr "Clear History"
+
+msgid "plugins.generic.smtpManager.logs.col.date"
+msgstr "Date"
+
+msgid "plugins.generic.smtpManager.logs.col.recipient"
+msgstr "Recipient"
+
+msgid "plugins.generic.smtpManager.logs.col.subject"
+msgstr "Subject"
+
+msgid "plugins.generic.smtpManager.logs.col.host"
+msgstr "SMTP Host"
+
+msgid "plugins.generic.smtpManager.logs.col.status"
+msgstr "Status"
+
+msgid "plugins.generic.smtpManager.logs.empty"
+msgstr "No email delivery logs recorded yet for this journal."
+
+msgid "plugins.generic.smtpManager.test.logTitle"
+msgstr "SMTP Handshake Log"
+
+msgid "plugins.generic.smtpManager.test.connecting"
+msgstr "Connecting to SMTP server..."
+
+msgid "plugins.generic.smtpManager.test.sending"
+msgstr "Sending..."
+
+msgid "plugins.generic.smtpManager.test.statusSuccess"
+msgstr "Success:"
+
+msgid "plugins.generic.smtpManager.test.statusFailed"
+msgstr "Failed:"
+
+msgid "plugins.generic.smtpManager.test.serverError"
+msgstr "Server Error:"
+
+msgid "plugins.generic.smtpManager.test.failedUnknown"
+msgstr "An unknown error occurred."
+
+msgid "plugins.generic.smtpManager.test.emailSubject"
+msgstr "OJS SMTP Diagnostic Test - {$date}"
+
+msgid "plugins.generic.smtpManager.test.emailBody"
+msgstr "This is an automated diagnostic email sent by the OJS SMTP Manager plugin.\n\nSMTP Host: {$host}\nSMTP Port: {$port}\nSent At: {$date}\n\nIf you are reading this email, your custom SMTP credentials and TLS/SSL handshake are properly configured and operational."
+
+msgid "plugins.generic.smtpManager.test.senderName"
+msgstr "OJS SMTP Test"
+
+msgid "plugins.generic.smtpManager.logs.status.sent"
+msgstr "Sent"
+
+msgid "plugins.generic.smtpManager.logs.status.failed"
+msgstr "Failed"
+
+msgid "plugins.generic.smtpManager.logs.clearConfirm"
+msgstr "Are you sure you want to clear all email delivery logs for this journal?"

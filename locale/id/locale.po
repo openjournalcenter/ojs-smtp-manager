@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OJS SMTP Manager\n"
+"POT-Creation-Date: 2026-10-31 00:00:00+0000\n"
+"PO-Revision-Date: 2026-10-31 00:00:00+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+
+msgid "plugins.generic.smtpManager.displayName"
+msgstr "SMTP Manager"
+
+msgid "plugins.generic.smtpManager.description"
+msgstr "Atur konfigurasi SMTP khusus per jurnal atau sistem tanpa perlu mengubah config.inc.php, dilengkapi tes pengiriman email instan."
+
+msgid "plugins.generic.smtpManager.settings.title"
+msgstr "Pengaturan & Diagnostik SMTP"
+
+msgid "plugins.generic.smtpManager.tabs.settings"
+msgstr "Konfigurasi SMTP"
+
+msgid "plugins.generic.smtpManager.tabs.testing"
+msgstr "Uji Pengiriman"
+
+msgid "plugins.generic.smtpManager.tabs.logs"
+msgstr "Riwayat Pengiriman"
+
+msgid "plugins.generic.smtpManager.settings.enabled"
+msgstr "Aktifkan SMTP Kustom untuk Jurnal Ini"
+
+msgid "plugins.generic.smtpManager.settings.enabled.description"
+msgstr "Gantikan konfigurasi email global server (config.inc.php) dengan akun SMTP mandiri jurnal ini."
+
+msgid "plugins.generic.smtpManager.settings.smtpHost"
+msgstr "Host SMTP"
+
+msgid "plugins.generic.smtpManager.settings.smtpHost.description"
+msgstr "Contoh: smtp.gmail.com, mail.domainanda.com"
+
+msgid "plugins.generic.smtpManager.settings.smtpPort"
+msgstr "Port SMTP"
+
+msgid "plugins.generic.smtpManager.settings.smtpPort.description"
+msgstr "Port umum: 465 (SSL), 587 (TLS), 25 (None)"
+
+msgid "plugins.generic.smtpManager.settings.smtpAuth"
+msgstr "Enkripsi / Autentikasi"
+
+msgid "plugins.generic.smtpManager.settings.smtpAuth.none"
+msgstr "None (Tanpa enkripsi / Port 25)"
+
+msgid "plugins.generic.smtpManager.settings.smtpAuth.ssl"
+msgstr "SSL (Port 465)"
+
+msgid "plugins.generic.smtpManager.settings.smtpAuth.tls"
+msgstr "TLS / STARTTLS (Port 587)"
+
+msgid "plugins.generic.smtpManager.settings.smtpUsername"
+msgstr "Username SMTP"
+
+msgid "plugins.generic.smtpManager.settings.smtpUsername.description"
+msgstr "Alamat email lengkap atau username autentikasi server SMTP."
+
+msgid "plugins.generic.smtpManager.settings.smtpPassword"
+msgstr "Password SMTP"
+
+msgid "plugins.generic.smtpManager.settings.smtpPassword.description"
+msgstr "Kata sandi email atau sandi aplikasi (App Password)."
+
+msgid "plugins.generic.smtpManager.settings.fromEmail"
+msgstr "Email Pengirim (From Email)"
+
+msgid "plugins.generic.smtpManager.settings.fromEmail.description"
+msgstr "Harus sesuai atau diizinkan oleh server SMTP agar tidak ditolak sebagai spam/relay."
+
+msgid "plugins.generic.smtpManager.settings.fromName"
+msgstr "Nama Pengirim (From Name)"
+
+msgid "plugins.generic.smtpManager.settings.fromName.description"
+msgstr "Nama tampilan pada email keluar (contoh: Redaksi Jurnal ABC)."
+
+msgid "plugins.generic.smtpManager.settings.suppressCertCheck"
+msgstr "Abaikan Verifikasi Sertifikat SSL"
+
+msgid "plugins.generic.smtpManager.settings.suppressCertCheck.description"
+msgstr "Centang hanya jika menggunakan sertifikat self-signed atau mengalami kendala verifikasi SSL lokal."
+
+msgid "plugins.generic.smtpManager.test.heading"
+msgstr "Tes Pengiriman Email"
+
+msgid "plugins.generic.smtpManager.test.description"
+msgstr "Kirim email tes langsung untuk memastikan koneksi dan autentikasi SMTP berhasil."
+
+msgid "plugins.generic.smtpManager.test.recipient"
+msgstr "Email Tujuan Tes"
+
+msgid "plugins.generic.smtpManager.test.recipient.description"
+msgstr "Masukkan alamat email aktif untuk menerima pesan uji coba."
+
+msgid "plugins.generic.smtpManager.test.button"
+msgstr "Kirim Email Tes"
+
+msgid "plugins.generic.smtpManager.test.success"
+msgstr "Email tes berhasil dikirim ke {$recipient}!"
+
+msgid "plugins.generic.smtpManager.test.failed"
+msgstr "Gagal mengirim email tes. Penyebab: {$error}"
+
+msgid "plugins.generic.smtpManager.test.savedRequired"
+msgstr "Simpan pengaturan terlebih dahulu sebelum menjalankan tes langsung."
+
+msgid "plugins.generic.smtpManager.logs.heading"
+msgstr "Riwayat Pengiriman Email"
+
+msgid "plugins.generic.smtpManager.logs.description"
+msgstr "Daftar email yang dikirim oleh OJS (notifikasi submission, review, korespondensi, dll) maupun tes mandiri."
+
+msgid "plugins.generic.smtpManager.logs.refresh"
+msgstr "Muat Ulang"
+
+msgid "plugins.generic.smtpManager.logs.clear"
+msgstr "Hapus Riwayat"
+
+msgid "plugins.generic.smtpManager.logs.col.date"
+msgstr "Waktu"
+
+msgid "plugins.generic.smtpManager.logs.col.recipient"
+msgstr "Penerima"
+
+msgid "plugins.generic.smtpManager.logs.col.subject"
+msgstr "Subjek"
+
+msgid "plugins.generic.smtpManager.logs.col.host"
+msgstr "Server SMTP"
+
+msgid "plugins.generic.smtpManager.logs.col.status"
+msgstr "Status"
+
+msgid "plugins.generic.smtpManager.logs.empty"
+msgstr "Belum ada riwayat email terkirim untuk jurnal ini."
+
+msgid "plugins.generic.smtpManager.test.logTitle"
+msgstr "Log Handshake SMTP"
+
+msgid "plugins.generic.smtpManager.test.connecting"
+msgstr "Sedang menghubungi server SMTP..."
+
+msgid "plugins.generic.smtpManager.test.sending"
+msgstr "Mengirim..."
+
+msgid "plugins.generic.smtpManager.test.statusSuccess"
+msgstr "Sukses:"
+
+msgid "plugins.generic.smtpManager.test.statusFailed"
+msgstr "Gagal:"
+
+msgid "plugins.generic.smtpManager.test.serverError"
+msgstr "Error Server:"
+
+msgid "plugins.generic.smtpManager.test.failedUnknown"
+msgstr "Terjadi kegagalan yang tidak diketahui."
+
+msgid "plugins.generic.smtpManager.test.emailSubject"
+msgstr "Uji Diagnostik SMTP OJS - {$date}"
+
+msgid "plugins.generic.smtpManager.test.emailBody"
+msgstr "Ini adalah email uji coba otomatis yang dikirim oleh plugin SMTP Manager OJS.\n\nHost SMTP: {$host}\nPort SMTP: {$port}\nWaktu Kirim: {$date}\n\nJika Anda membaca email ini, pengaturan SMTP kustom dan koneksi TLS/SSL jurnal Anda telah berhasil dikonfigurasi dan berfungsi dengan baik."
+
+msgid "plugins.generic.smtpManager.test.senderName"
+msgstr "Uji SMTP OJS"
+
+msgid "plugins.generic.smtpManager.logs.status.sent"
+msgstr "Terkirim"
+
+msgid "plugins.generic.smtpManager.logs.status.failed"
+msgstr "Gagal"
+
+msgid "plugins.generic.smtpManager.logs.clearConfirm"
+msgstr "Apakah Anda yakin ingin menghapus seluruh riwayat pengiriman email untuk jurnal ini?"
