@@ -46,7 +46,7 @@ In standard OJS deployments, outgoing email settings are restricted to the globa
 
 1. Clone or extract the plugin into your OJS plugins directory:
    ```bash
-   git clone https://github.com/dimartarmizi/ojs-smtp-manager.git plugins/generic/smtpManager
+   git clone https://github.com/openjournalcenter/ojs-smtp-manager.git plugins/generic/smtpManager
    ```
    *Or extract the release archive into `plugins/generic/smtpManager`.*
 
@@ -67,7 +67,7 @@ In standard OJS deployments, outgoing email settings are restricted to the globa
 
 - **Author**: Dimar Tarmizi
 - **Organization**: [Open Journal Center](https://github.com/openjournalcenter)
-- **Repository**: [https://github.com/dimartarmizi/ojs-smtp-manager](https://github.com/dimartarmizi/ojs-smtp-manager)
+- **Repository**: [https://github.com/openjournalcenter/ojs-smtp-manager](https://github.com/openjournalcenter/ojs-smtp-manager)
 
 ## License
 
