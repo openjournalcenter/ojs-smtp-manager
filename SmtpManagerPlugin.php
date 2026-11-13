@@ -13,6 +13,7 @@ use APP\plugins\generic\smtpManager\controllers\SmtpManagerHandler;
 use Exception;
 use Illuminate\Mail\Events\MessageSending;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 use PKP\core\JSONMessage;
 use PKP\linkAction\LinkAction;
 use PKP\linkAction\request\AjaxModal;
@@ -34,11 +35,23 @@ class SmtpManagerPlugin extends GenericPlugin
 	{
 		$success = parent::register($category, $path, $mainContextId);
 		if ($success && $this->getEnabled($mainContextId)) {
+			$this->ensureSchemaInstalled();
 			$this->registerMailEvents();
 			Hook::add('LoadHandler', [$this, 'setPageHandler']);
 			Hook::add('TemplateManager::display', [$this, 'handleTemplateDisplay']);
 		}
 		return $success;
+	}
+
+	protected function ensureSchemaInstalled(): void
+	{
+		if (!$this->getSetting(0, 'schema_installed')) {
+			if (!Schema::hasTable('smtp_delivery_logs')) {
+				$migration = $this->getInstallMigration();
+				$migration->up();
+			}
+			$this->updateSetting(0, 'schema_installed', true);
+		}
 	}
 
 	public function getInstallMigration()
